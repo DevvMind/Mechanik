@@ -1,0 +1,74 @@
+<!-- Wojtoszo#7694-->
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Warsztat Samochodowy-szablon</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<nav class="nav">
+		
+		<div class="container">
+			<h2>Nawigacja</h2>
+			<ul>
+				<li><img src="Galeria/logo.png" height="100px" width="120px"></li>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="oferta.html">Oferta</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="cennik.html">Cennik</a></li>
+	
+			</ul>
+		</div>
+		
+	</nav>
+	<body>
+        
+		<header class="header">
+            <div class="contact-container">
+            
+                <h2>Informacje kontaktowe</h2>
+                
+                <div class="contact-info">
+                  <span class="contact-label">Imię:</span>
+                  <span class="contact-value">Jan Kowalski</span>
+                </div>
+                
+                <div class="contact-info">
+                  <span class="contact-label">E-mail:devmindhtml@gmail.com</span>
+                  <a href="mailto:jan.kowalski@example.com" class="contact-link"></a>
+                </div>
+                
+                <div class="contact-info">
+                  <span class="contact-label">Telefon:</span>
+                  <span class="contact-value">+48 123 456 789</span>
+                </div>
+		</header>
+		
+		
+		
+		<footer>
+			<p>&copy; <a href="https://discord.gg/jawKZncDBz">Wojtoszo#7694</a> 2023r.</p>
+		</footer>
+		<script src="jquery.js"></script>
+		<script src="stickyfill.js"></script>
+		<script>
+			$('.nav').Stickyfill();
+
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>

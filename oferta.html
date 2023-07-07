@@ -1,0 +1,140 @@
+<!-- Wojtoszo#7694-->
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Warsztat Samochodowy-szablon</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<nav class="nav">
+		
+		<div class="container">
+			<h2>Nawigacja</h2>
+			<ul>
+				<li><img src="Galeria/logo.png" height="100px" width="120px"></li>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="oferta.html">Oferta</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="cennik.html">Cennik</a></li>
+	
+			</ul>
+		</div>
+		
+	</nav>
+	<body>
+		<header class="header">
+            <style>
+                
+                .offer-container {
+                  max-width: 600px;
+                  margin: 0 auto;
+                  background-color:#333;
+                  padding: 20px;
+                  border-radius: 5px;
+                  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+                  overflow-y: auto;
+                  max-height: 400px;
+                }
+            
+                .offer-title {
+                  text-align: center;
+                  font-size: 24px;
+                  margin-bottom: 20px;
+                }
+            
+                .offer-item {
+                  display: flex;
+                  align-items: center;
+                  margin-bottom: 15px;
+                }
+            
+                .offer-icon {
+                  width: 30px;
+                  height: 30px;
+                  margin-right: 10px;
+                }
+            
+                .offer-text {
+                  font-size: 16px;
+                }
+            
+                .offer-button {
+                  display: inline-block;
+                  padding: 10px 20px;
+                  background-color: #007bff;
+                  color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+                  text-decoration: none;
+                  border-radius: 5px;
+                  text-align: center;
+                  transition: background-color 0.3s ease;
+                }
+            
+                .offer-button:hover {
+                  background-color: #0056b3;
+                }
+              </style>
+            </head>
+            <body>
+            
+            <div class="offer-container">
+              <h2 class="offer-title">Oferta mechanika</h2>
+            
+              <div class="offer-item">
+                <img class="offer-icon" src="Galeria/Przewijanie/autko.png" alt="Autko">
+                <p class="offer-text">Naprawa i konserwacja pojazdów</p>
+              </div>
+            
+              <div class="offer-item">
+                <img class="offer-icon" src="Galeria/Przewijanie/komputer.png" alt="Komputer">
+                <p class="offer-text">Diagnostyka komputerowa</p>
+              </div>
+            
+              <div class="offer-item">
+                <img class="offer-icon" src="Galeria/Przewijanie/olej.png" alt="Olej kropla">
+                <p class="offer-text">Wymiana oleju i filtrów</p>
+              </div>
+            
+              <div class="offer-item">
+                <img class="offer-icon" src="Galeria/Przewijanie/akumulator.png" alt="ikona bateri">
+                <p class="offer-text">Sprawdzenie i wymiana akumulatorów</p>
+              </div>
+            
+              <a class="offer-button" href="kontakt.html">Skontaktuj się z nami</a>
+            </div>
+            
+            
+		</header>
+		
+		
+		
+		<footer>
+			<p>&copy; <a href="https://discord.gg/jawKZncDBz">Wojtoszo#7694</a> 2023r.</p>
+		</footer>
+		<script src="jquery.js"></script>
+		<script src="stickyfill.js"></script>
+		<script>
+			$('.nav').Stickyfill();
+
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>

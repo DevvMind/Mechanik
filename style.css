@@ -1,0 +1,214 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: #fff;
+    color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+	
+
+.container, .footer {
+	max-width: 900px;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 15px;
+	padding-right: 15px;
+}
+
+header {
+	position: relative;
+	min-height: calc(100vh - 70px);
+	padding: 250px 0;
+	color: white;
+    text-shadow:
+    -1px -1px 0 #000,
+    1px -1px 0 #000,
+    -1px 1px 0 #000,
+    1px 1px 0 #000;
+	text-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+	text-align: center;
+	overflow: hidden;
+	background-image: url(Galeria/Przewijanie/tło.jpg);
+	height: 150px;
+	width: auto;
+
+
+}
+
+
+	.header h1 {
+		font-size: 72px;
+	}
+
+	.header p {
+		margin-top: 30px;
+	}
+
+	.header .video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		min-width: 100%;
+		min-height: 100%;
+		z-index: -1;
+	}
+
+.nav {
+	position: -webkit-sticky;
+	position: sticky;
+	background: #2a2f33;
+	line-height: 70px;
+
+	
+}
+
+	@media (min-width: 700px) {
+		.nav {
+			top: 0;
+		}
+	}
+
+	.nav h2 {
+		position: absolute;
+		clip: rect(0, 0, 0, 0);
+	}
+
+	.nav ul {
+		display: flex;
+		justify-content: space-between;
+		list-style: none;
+	}
+
+	@media (max-width: 700px) {
+		.nav ul {
+			flex-direction: column;
+		}
+	}
+
+		.nav li {
+			width: 100%;
+		}
+
+			.nav a {
+				display: block;
+				color: #fff;
+				text-decoration: none;
+				text-align: center;
+			}
+
+				.nav a:hover {
+					background: #375875;
+				}
+
+.section {
+	padding: 50px 0;
+	text-align: justify;
+}
+
+	.section:nth-of-type(even) { 
+		background: #f3f3f3;
+	}
+
+	.section *:not(:first-child) {
+		margin-top: 30px;
+	}
+
+footer {
+	padding: 30px;
+	background-color: #2a2f33;
+	
+	text-align: center;
+}
+#photo-container {
+	width: 500px;
+	height: 300px;
+	overflow: hidden;
+  }
+
+  @keyframes scroll {
+	0% { margin-left: 0; }
+	10% { margin-left: -500px; }
+  }
+
+  #photo-container img {
+	width: 500px;
+	height: 300px;
+	object-fit: cover;
+	animation: scroll 5s infinite;
+  }
+  table {
+	border-collapse: collapse;
+	color: rgb(238, 233, 233);
+	margin-left: auto;
+    margin-right: auto;
+	background-color: #333;
+	
+  }
+  th, td {
+	border: 1px solid black;
+	padding: 8px;
+	float: center
+	;
+  }
+  
+/*<!-Kontakt -->*/
+
+
+h1 {
+	text-align: center;
+  }
+  
+  .contact-container {
+	max-width: 600px;
+	margin: 0 auto;
+	background-color:#333;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+	position: relative;
+  }
+  
+  .contact-container::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #fff;
+	transform: rotate(-3deg);
+	z-index: -1;
+	box-shadow: 0 8px 15px rgba(0, 0, 0, 0.1);
+  }
+  
+  .contact-info {
+	margin-bottom: 20px;
+  }
+  
+  .contact-label {
+	font-weight: bold;
+  }
+  
+  .contact-value {
+	margin-left: 10px;
+  }
+  
+  .contact-link {
+	color: #007bff;
+	text-decoration: none;
+  }
+  
+  .contact-link:hover {
+	text-decoration: underline;
+  }
+
+
+/*<!--Wojtoszo#7694-->*/

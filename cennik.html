@@ -1,0 +1,90 @@
+<!-- Wojtoszo#7694-->
+<!DOCTYPE html>
+<html lang="pl">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width">
+		<title>Warsztat Samochodowy-szablon</title>
+		<link rel="stylesheet" href="style.css">
+	</head>
+	<nav class="nav">
+		
+		<div class="container">
+			<h2>Nawigacja</h2>
+			<ul>
+				<li><img src="Galeria/logo.png" height="100px" width="120px"></li>
+                <li><a href="index.html">Home</a></li>
+				<li><a href="oferta.html">Oferta</a></li>
+				<li><a href="kontakt.html">Kontakt</a></li>
+				<li><a href="cennik.html">Cennik</a></li>
+	
+			</ul>
+		</div>
+		
+	</nav>
+	<body>
+        
+		<header class="header">
+            <table border="1">
+                <tr>
+                  <th>L.p</th>
+                  <th>Usługa</th>
+                  <th>Koszt</th>
+                
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Wiersz 1, komórka 2</td>
+                  <td>Wiersz 1, komórka 3</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Wiersz 2, komórka 2</td>
+                  <td>Wiersz 2, komórka 3</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Wiersz 3, komórka 2</td>
+                  <td>Wiersz 3, komórka 3</td>
+                </tr>
+                <tr>
+                  <td>4</td>
+                  <td>Wiersz 4, komórka 2</td>
+                  <td>Wiersz 4, komórka 3</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>Wiersz 5, komórka 2</td>
+                  <td>Wiersz 5, komórka 3</td>
+                </tr>
+              </table>
+              
+		</header>
+		
+		
+		
+		<footer>
+			<p>&copy; <a href="https://discord.gg/jawKZncDBz">Wojtoszo#7694</a> 2023r.</p>
+		</footer>
+		<script src="jquery.js"></script>
+		<script src="stickyfill.js"></script>
+		<script>
+			$('.nav').Stickyfill();
+
+			$(function() {
+			  $('a[href*="#"]:not([href="#"])').click(function() {
+			    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+			      var target = $(this.hash);
+			      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+			      if (target.length) {
+			        $('html,body').stop().animate({
+			          scrollTop: target.offset().top - 70
+			        }, 1000);
+			        return false;
+			      }
+			    }
+			  });
+			});
+		</script>
+	</body>
+</html>
